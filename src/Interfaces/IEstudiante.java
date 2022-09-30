@@ -2,7 +2,7 @@ package Interfaces;
 
 import java.util.ArrayList;
 
-import clases.Estudiante;
+import entidades.Estudiante;
 
 public interface IEstudiante{
 

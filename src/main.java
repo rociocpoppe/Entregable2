@@ -4,9 +4,10 @@ import javax.persistence.Persistence;
 
 import DAO.CarreraDao;
 import DAO.EstudianteDao;
-import clases.Carrera;
-import clases.Estudiante;
-import clases.Estudiante_Carrera;
+import Interfaces.ICarrera;
+import entidades.Carrera;
+import entidades.Estudiante;
+import entidades.Estudiante_Carrera;
 
 public class main {
     
@@ -21,9 +22,12 @@ public class main {
 		// em.persist(e1);
         // em.persist(e2);
 		// em.persist(e3);
-		// EstudianteDao e1=new EstudianteDao();
-        // CarreraDao c1=new CarreraDao("TUDAI");
+		// EstudianteDao e1=new EstudianteDao();  
         // Estudiante_CarreraDao ec1=new Estudiante_CarreraDao(e1, c1);
+        CarreraDao c1=new CarreraDao(em);
+        Carrera c=new Carrera("TUDAI");
+        c1.insertCarrera(c);
+      
 		em.getTransaction().commit();
 		em.close();
 		

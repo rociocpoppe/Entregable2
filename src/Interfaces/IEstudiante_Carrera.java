@@ -2,8 +2,8 @@ package Interfaces;
 
 import java.util.ArrayList;
 
-import clases.Carrera;
-import clases.Estudiante;
+import entidades.Carrera;
+import entidades.Estudiante;
 
 public interface IEstudiante_Carrera {
 

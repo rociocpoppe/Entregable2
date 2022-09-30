@@ -1,4 +1,4 @@
-package clases;
+package entidades;
 
 import java.util.ArrayList;
 import java.util.Set;
@@ -96,6 +96,14 @@ public class Estudiante{
     public void addCarrera(Estudiante_Carrera carrera) {
         this.carreras.add(carrera);
     }
+
+    @Override
+    public String toString() {
+        return "Estudiante [apellido=" + apellido + ", carreras=" + carreras + ", ciudadResidencia=" + ciudadResidencia
+                + ", edad=" + edad + ", genero=" + genero + ", nombre=" + nombre + ", nroDni=" + nroDni
+                + ", nroLibretaUniv=" + nroLibretaUniv + "]";
+    }
+
 
     
 

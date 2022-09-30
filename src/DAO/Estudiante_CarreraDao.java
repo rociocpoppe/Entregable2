@@ -3,8 +3,8 @@ package DAO;
 import java.util.ArrayList;
 
 import Interfaces.IEstudiante_Carrera;
-import clases.Carrera;
-import clases.Estudiante;
+import entidades.Carrera;
+import entidades.Estudiante;
 
 public class Estudiante_CarreraDao implements IEstudiante_Carrera{
 
